@@ -7,7 +7,7 @@ import (
 
 type CheckOut interface {
 	Scan(uid int64, item *Item)
-	Total(p *PricingRules) uint64
+	Total() uint64
 }
 
 var basket map[int64]Items
